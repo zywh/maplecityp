@@ -16,6 +16,9 @@ class MapController extends XFrontBase {
         $housetype = PropertyType::model()->findAll();
         $this->render('index', array('houseType' => $housetype));
     }
+    public function actionIndexi() {
+        $this->render('indexi');
+	}
 
     public function actionIndexsb() {
         $housetype = PropertyType::model()->findAll();
