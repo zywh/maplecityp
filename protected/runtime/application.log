@@ -4401,3 +4401,604 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/index.php?r=house/view&id=440
 ---
+2016/12/19 05:10:35 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:10:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5832025')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5832025
+---
+2016/12/19 05:10:46 [error] [php] require(/var/www/html/protected/controllers/EnjoyController.php): failed to open stream: Permission denied (/var/www/html/framework/yiilite.php:1807)
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController()
+#1 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#2 /var/www/html/index.php(23): CWebApplication->run()
+REQUEST_URI=/index.php?r=enjoy/index&sheng=3
+2016/12/19 05:11:03 [error] [php] require(/var/www/html/protected/controllers/EnjoyController.php): failed to open stream: Permission denied (/var/www/html/framework/yiilite.php:1807)
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController()
+#1 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#2 /var/www/html/index.php(23): CWebApplication->run()
+REQUEST_URI=/index.php?r=enjoy/index&sheng=10
+2016/12/19 05:11:21 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND m.municipality like '%' 
+					AND  m.count > 10 order by count desc 10' at line 5. The SQL statement executed was: 
+					SELECT m.municipality citye,m.municipality_cname cityc,m.province provincee,c.name provincec 
+					FROM h_mname m, h_city c 
+					WHERE m.province = c.englishname 
+					AND  c.id= 
+					AND m.municipality like '%' 
+					AND  m.count > 10 order by count desc 10.
+2016/12/19 05:11:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND m.municipality like '%' 
+					AND  m.count > 10 order by count desc 10' at line 5. The SQL statement executed was: 
+					SELECT m.municipality citye,m.municipality_cname cityc,m.province provincee,c.name provincec 
+					FROM h_mname m, h_city c 
+					WHERE m.province = c.englishname 
+					AND  c.id= 
+					AND m.municipality like '%' 
+					AND  m.count > 10 order by count desc 10' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/protected/controllers/HouseController.php(679): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(4139): HouseController->actionGetCityList()
+#3 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#4 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/framework/yiilite.php(1761): CController->run('getCityList')
+#7 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/getCityLi...')
+#8 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#9 /var/www/html/index.php(23): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=house/getCityList
+---
+2016/12/19 05:12:07 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:12:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5213145')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5213145
+---
+2016/12/19 05:14:47 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:14:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5834341')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5834341
+---
+2016/12/19 05:19:36 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:19:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6292451')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6292451
+---
+2016/12/19 05:23:29 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:23:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5986325')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5986325
+---
+2016/12/19 05:25:53 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:25:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5624732')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5624732
+---
+2016/12/19 05:30:41 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:30:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6299785')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6299785
+---
+2016/12/19 05:36:05 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:36:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5357646')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5357646
+---
+2016/12/19 05:38:11 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:38:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6297024')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6297024
+---
+2016/12/19 05:40:16 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:40:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5369088')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5369088
+---
+2016/12/19 05:41:47 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:41:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6401448')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6401448
+---
+2016/12/19 05:45:32 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:45:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5847')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5847
+---
+2016/12/19 05:45:33 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:45:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6012')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6012
+---
+2016/12/19 05:45:40 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:45:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6301088')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6301088
+---
+2016/12/19 05:46:34 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:46:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6401443')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6401443
+---
+2016/12/19 05:47:11 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:47:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6401433')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6401433
+---
+2016/12/19 05:50:53 [error] [php] require(/var/www/html/protected/controllers/EnjoyController.php): failed to open stream: Permission denied (/var/www/html/framework/yiilite.php:1807)
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController()
+#1 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#2 /var/www/html/index.php(23): CWebApplication->run()
+REQUEST_URI=/index.php?r=enjoy/index
+2016/12/19 05:54:59 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:54:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('4746625')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=4746625
+---
+2016/12/19 05:55:53 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:55:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6179059')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6179059
+---
+2016/12/19 05:57:23 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:57:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5987646')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5987646
+---
+2016/12/19 05:57:50 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:57:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('358')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?id=358&r=house/view
+HTTP_REFERER=http://www.maplecity.com.cn/index.php?id=358&r=house/view
+---
+2016/12/19 05:58:52 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 05:58:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5989959')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5989959
+---
+2016/12/19 06:01:54 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 06:01:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('5934208')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=5934208
+---
+2016/12/19 06:06:05 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 06:06:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6156678')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6156678
+---
+2016/12/19 06:09:59 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2016/12/19 06:09:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('6002205')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=6002205
+---
