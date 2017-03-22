@@ -8258,3 +8258,1372 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/index.php?id=80088&r=house/view
 ---
+2017/03/22 09:20:38 [error] [php] require(/var/www/html/protected/controllers/EnjoyController.php): failed to open stream: Permission denied (/var/www/html/framework/yiilite.php:1807)
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController()
+#1 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#2 /var/www/html/index.php(23): CWebApplication->run()
+REQUEST_URI=/index.php?r=enjoy/index
+2017/03/22 09:54:05 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2017/03/22 09:54:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('828')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=house/view&id=828
+---
+2017/03/22 09:54:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register'.,(,)'.)." 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register'.,(,)'...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register'.,(,)'...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register'....')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27.%2C%28%2C%29%27.%29.
+---
+2017/03/22 09:54:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register'CwiefR<'">CqAVEz" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register'CwiefR...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register'CwiefR...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register'C...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27CwiefR%3C%27%22%3ECqAVEz
+---
+2017/03/22 09:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) ORDER BY 1-- UfHt" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) ORDER...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) ORDER...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20ORDER%20BY%201--%20UfHt
+---
+2017/03/22 09:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL-- MMqW" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL--%20MMqW
+---
+2017/03/22 09:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL-- yfcD" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL--%20yfcD
+---
+2017/03/22 09:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL-- NcgO" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL--%20NcgO
+---
+2017/03/22 09:54:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL-- yCRx" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL--%20yCRx
+---
+2017/03/22 09:54:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL-- Xvkk" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL--%20Xvkk
+---
+2017/03/22 09:54:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL-- GvSe" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20GvSe
+---
+2017/03/22 09:54:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL-- phMt" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20phMt
+---
+2017/03/22 09:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- eFOG" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20eFOG
+---
+2017/03/22 09:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- gToc" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20gToc
+---
+2017/03/22 09:54:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- GKtp" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20GKtp
+---
+2017/03/22 09:54:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register ORDER BY 1-- sKOI" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register ORDER ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register ORDER ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register O...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20ORDER%20BY%201--%20sKOI
+---
+2017/03/22 09:54:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL-- MoFU" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL--%20MoFU
+---
+2017/03/22 09:54:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL-- Bnwa" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL--%20Bnwa
+---
+2017/03/22 09:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL-- ZrJK" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL--%20ZrJK
+---
+2017/03/22 09:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL-- IQba" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL--%20IQba
+---
+2017/03/22 09:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL-- hSjs" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL--%20hSjs
+---
+2017/03/22 09:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL-- Yvas" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20Yvas
+---
+2017/03/22 09:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL-- wdtD" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20wdtD
+---
+2017/03/22 09:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- ZtzL" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20ZtzL
+---
+2017/03/22 09:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- DGTu" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20DGTu
+---
+2017/03/22 09:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- DZmr" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20DZmr
+---
+2017/03/22 09:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') ORDER BY 1-- Ysth" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') ORDE...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') ORDE...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20ORDER%20BY%201--%20Ysth
+---
+2017/03/22 09:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL-- aENz" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL--%20aENz
+---
+2017/03/22 09:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL-- LwYI" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL--%20LwYI
+---
+2017/03/22 09:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL-- LbAz" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL--%20LbAz
+---
+2017/03/22 09:54:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL-- juao" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL--%20juao
+---
+2017/03/22 09:54:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL-- mrHn" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL--%20mrHn
+---
+2017/03/22 09:54:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL-- sKgx" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20sKgx
+---
+2017/03/22 09:54:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL-- YsPo" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20YsPo
+---
+2017/03/22 09:54:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- MCLL" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20MCLL
+---
+2017/03/22 09:54:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- lKDx" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20lKDx
+---
+2017/03/22 09:54:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- yxsx" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20yxsx
+---
+2017/03/22 09:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' ORDER BY 1-- vBYT" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' ORDER...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' ORDER...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20ORDER%20BY%201--%20vBYT
+---
+2017/03/22 09:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL-- nLld" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL--%20nLld
+---
+2017/03/22 09:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL-- hwbV" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL--%20hwbV
+---
+2017/03/22 09:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL-- sgSn" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL--%20sgSn
+---
+2017/03/22 09:55:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL-- jpuD" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL--%20jpuD
+---
+2017/03/22 09:55:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL-- fDCa" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL--%20fDCa
+---
+2017/03/22 09:55:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL-- RJDJ" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20RJDJ
+---
+2017/03/22 09:55:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL-- jAIW" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20jAIW
+---
+2017/03/22 09:55:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- GcPD" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20GcPD
+---
+2017/03/22 09:55:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- QzhR" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20QzhR
+---
+2017/03/22 09:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- wDms" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20wDms
+---
+2017/03/22 09:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' ORDER BY 1-- ItJz" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' ORDE...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' ORDE...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20ORDER%20BY%201--%20ItJz
+---
+2017/03/22 09:55:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL-- xiXV" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL--%20xiXV
+---
+2017/03/22 09:55:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL-- CMin" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL--%20CMin
+---
+2017/03/22 09:55:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL-- uDrt" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL--%20uDrt
+---
+2017/03/22 09:55:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL-- BlKg" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL--%20BlKg
+---
+2017/03/22 09:55:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL-- frsM" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL--%20frsM
+---
+2017/03/22 09:55:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL-- VYXs" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20VYXs
+---
+2017/03/22 09:55:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL-- oosZ" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20oosZ
+---
+2017/03/22 09:55:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- oNvk" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20oNvk
+---
+2017/03/22 09:55:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- Edwx" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20Edwx
+---
+2017/03/22 09:55:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- WwjM" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20WwjM
+---
+2017/03/22 09:55:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register ORDER BY 1-- sveh" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register ORDER ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register ORDER ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register O...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20ORDER%20BY%201--%20sveh
+---
+2017/03/22 09:55:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL-- zWsB" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL--%20zWsB
+---
+2017/03/22 09:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL-- eNLJ" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL--%20eNLJ
+---
+2017/03/22 09:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL-- lGES" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL--%20lGES
+---
+2017/03/22 09:55:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL-- Julc" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL--%20Julc
+---
+2017/03/22 09:55:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL-- UArs" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL--%20UArs
+---
+2017/03/22 09:55:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL-- UFHp" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20UFHp
+---
+2017/03/22 09:55:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL-- NyMV" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20NyMV
+---
+2017/03/22 09:55:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- BJEh" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20BJEh
+---
+2017/03/22 09:55:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- UiyQ" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20UiyQ
+---
+2017/03/22 09:55:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- yamj" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--%20yamj
+---
+2017/03/22 09:55:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) ORDER BY 1#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) ORDER...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) ORDER...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20ORDER%20BY%201%23
+---
+2017/03/22 09:55:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%23
+---
+2017/03/22 09:55:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%23
+---
+2017/03/22 09:55:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register) UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register) UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register) UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register) ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register ORDER BY 1#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register ORDER ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register ORDER ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register O...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20ORDER%20BY%201%23
+---
+2017/03/22 09:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%23
+---
+2017/03/22 09:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%23
+---
+2017/03/22 09:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') ORDER BY 1#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') ORDE...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') ORDE...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20ORDER%20BY%201%23
+---
+2017/03/22 09:55:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%23
+---
+2017/03/22 09:55:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%23
+---
+2017/03/22 09:55:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register') UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register') UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register') UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register')...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%29%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' ORDER BY 1#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' ORDER...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' ORDER...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20ORDER%20BY%201%23
+---
+2017/03/22 09:55:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%23
+---
+2017/03/22 09:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%23
+---
+2017/03/22 09:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register' UNION...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register' UNION...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register' ...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' ORDER BY 1#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' ORDE...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' ORDE...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20ORDER%20BY%201%23
+---
+2017/03/22 09:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%23
+---
+2017/03/22 09:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%23
+---
+2017/03/22 09:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register%' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register%' UNIO...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register%' UNIO...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register%'...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%25%27%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register ORDER BY 1#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register ORDER ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register ORDER ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register O...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20ORDER%20BY%201%23
+---
+2017/03/22 09:55:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%23
+---
+2017/03/22 09:55:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%23
+---
+2017/03/22 09:55:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
+2017/03/22 09:55:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "register UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#" 动作.' in /var/www/html/framework/yiilite.php:3750
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(3632): CController->missingAction('register UNION ...')
+#1 /var/www/html/framework/yiilite.php(1761): CController->run('register UNION ...')
+#2 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('user/register U...')
+#3 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#4 /var/www/html/index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=user%2Fregister%20UNION%20ALL%20SELECT%20NULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL%23
+---
