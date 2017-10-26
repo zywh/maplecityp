@@ -3262,3 +3262,695 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/index.php?id=234496399&r=house/view
 ---
+2017/10/26 14:27:05 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5.
+2017/10/26 14:27:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and recommend=1 limit 0,5' at line 1. The SQL statement executed was: select * from h_house where lp_dol<3000000 and lp_dol > 1000000 and id!= and recommend=1 limit 0,5' in /var/www/html/framework/yiilite.php:9510
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(9429): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/themes/house/views/house/view.php(1386): CDbCommand->query()
+#2 /var/www/html/framework/yiilite.php(3493): require('/var/www/html/t...')
+#3 /var/www/html/framework/yiilite.php(3472): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/framework/yiilite.php(3904): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/framework/yiilite.php(3872): CController->renderPartial('view', Array, true)
+#6 /var/www/html/protected/controllers/HouseController.php(544): CController->render('view', Array)
+#7 [internal function]: HouseController->actionView('234499743')
+#8 /var/www/html/framework/yiilite.php(4121): ReflectionMethod->invokeArgs(Object(HouseController), Array)
+#9 /var/www/html/framework/yiilite.php(4138): CAction->runWithParamsInternal(Object(HouseController), Object(ReflectionMethod), Array)
+#10 /var/www/html/framework/yiilite.php(3652): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/yiilite.php(3637): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/yiilite.php(3627): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/yiilite.php(1761): CController->run('view')
+#14 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#15 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#16 /var/www/html/index.php(23): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?id=234499743&r=house/view
+---
+2017/10/26 14:31:48 [error] [php] require(/var/www/html/protected/controllers/EnjoyController.php): failed to open stream: Permission denied (/var/www/html/framework/yiilite.php:1807)
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController()
+#1 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#2 /var/www/html/index.php(23): CWebApplication->run()
+REQUEST_URI=/index.php?r=enjoy/index&sheng=3
+2017/10/26 14:33:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=3&cd2=0&cd3=1&cd4=5&cd5=0-30&cd6=3&cd7=7&cd8=2&cd9=0&cd10=0&cd11=0&cd12=0&cd12_2=1&cd12_3=0&cd12_4=0&cd12_5=0&cd13=3&cd14=3&cd15=0&cd16=1&cd17=0&cd18=0
+---
+2017/10/26 14:33:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?cd10=0&cd11=1&cd12=1&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=0&cd14=0&cd15=2&cd16=0&cd17=0&cd18=0&cd1=0&cd2=0&cd3=0&cd4=0&cd5=0&cd6=9&cd7=0&cd8=0&cd9=0&r=house/index&type=rent
+---
+2017/10/26 14:34:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/view&id=234596514
+---
+2017/10/26 14:34:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/view&id=234596378
+---
+2017/10/26 14:35:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('news/tagNews')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=news/tagNews&tname=%E5%87%BA%E5%9B%BD%E7%95%99%E5%AD%A6
+---
+2017/10/26 14:35:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/view&id=234596383
+---
+2017/10/26 14:35:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/view&id=234596570
+---
+2017/10/26 14:37:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=0&cd2=0&cd3=1&cd4=3&cd5=100-150&cd6=7&cd7=3&cd8=0&cd9=0&cd10=0&cd11=0&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=0&cd14=3&cd15=0&cd16=0&cd17=0&cd18=0
+---
+2017/10/26 14:38:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=0&cd2=0&cd3=0&cd4=7&cd5=600-0&cd6=6&cd7=1&cd8=0&cd9=0&cd10=0&cd11=0&cd12=1&cd12_2=0&cd12_3=1&cd12_4=0&cd12_5=0&cd13=3&cd14=0&cd15=4&cd16=3&cd17=0&cd18=0
+---
+2017/10/26 14:40:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('hotrecommend/mo...')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?city=4&page=77&price_sort=DESC&r=hotrecommend/more&time_sort=0
+---
+2017/10/26 14:41:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=4&cd2=0&cd3=1&cd4=7&cd5=100-150&cd6=2&cd7=1&cd8=0&cd9=0&cd10=5&cd11=0&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=0&cd14=3&cd15=0&cd16=0&cd17=0&cd18=1
+---
+2017/10/26 14:41:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2017/10/26 14:41:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2017/10/26 14:42:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=9&cd2=0&cd3=0&cd4=1&cd5=100-150&cd6=6&cd7=1&cd8=0&cd9=0&cd10=6&cd11=2&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=1&cd13=1&cd14=3&cd15=1&cd16=2&cd17=0&cd18=1
+---
+2017/10/26 14:42:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/view&id=227461510
+---
+2017/10/26 14:43:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('news/canadaNews...')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?id=594&r=news/canadaNewsView
+---
+2017/10/26 14:44:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=0&cd2=0&cd3=3&cd4=7&cd5=300-450&cd6=3&cd7=0&cd8=2&cd9=0&cd10=1&cd11=3&cd12=0&cd12_2=1&cd12_3=0&cd12_4=0&cd12_5=0&cd13=3&cd14=2&cd15=4&cd16=0&cd17=0&cd18=1
+---
+2017/10/26 14:45:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=0&cd2=0&cd3=1&cd4=1&cd5=0&cd6=0&cd7=6&cd8=2&cd9=0&cd10=0&cd11=4&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=0&cd14=0&cd15=0&cd16=0&cd17=0&cd18=0
+---
+2017/10/26 14:48:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('news/housenewsv...')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=news/housenewsview&id=342
+---
+2017/10/26 14:48:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('hotrecommend/mo...')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?city=4&page=78&price_sort=DESC&r=hotrecommend/more&time_sort=0
+---
+2017/10/26 14:48:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=sale&cd1=4&cd2=0&cd3=0&cd4=3&cd5=30-50&cd6=0&cd7=3&cd8=0&cd9=0&cd10=3&cd11=0&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=4&cd14=3&cd15=0&cd16=0&cd17=0&cd18=0
+---
+2017/10/26 14:48:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?id=234494545&r=house/view
+---
+2017/10/26 14:52:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?cd10=0&cd11=0&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=0&cd14=0&cd15=0&cd16=0&cd17=0&cd18=0&cd1=4&cd2=0&cd3=3&cd4=3&cd5=0&cd6=0&cd7=0&cd8=1&cd9=0&r=house/index&type=rent
+---
+2017/10/26 14:52:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=9&cd2=0&cd3=0&cd4=1&cd5=300-450&cd6=9&cd7=4&cd8=6&cd9=0&cd10=0&cd11=5&cd12=1&cd12_2=1&cd12_3=1&cd12_4=0&cd12_5=0&cd13=2&cd14=0&cd15=2&cd16=4&cd17=0&cd18=0
+---
+2017/10/26 14:52:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('news/canadaNews...')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=news/canadaNewsView&id=338
+---
+2017/10/26 14:56:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=sale&cd1=4&cd2=0&cd3=1&cd4=7&cd5=50-100&cd6=9&cd7=1&cd8=1&cd9=0&cd10=5&cd11=4&cd12=1&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=1&cd14=5&cd15=3&cd16=3&cd17=0&cd18=2
+---
+2017/10/26 14:56:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?cd10=0&cd11=0&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=4&cd14=0&cd15=3&cd16=3&cd17=0&cd18=0&cd1=0&cd2=0&cd3=0&cd4=0&cd5=0&cd6=0&cd7=0&cd8=0&cd9=0&r=house/index&type=rent
+---
+2017/10/26 14:56:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('news/canadaNews...')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=news/canadaNewsView&id=520
+---
+2017/10/26 15:00:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=7&cd2=0&cd3=0&cd4=2&cd5=30-50&cd6=0&cd7=2&cd8=6&cd9=0&cd10=1&cd11=0&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=0&cd14=0&cd15=0&cd16=0&cd17=0&cd18=0
+---
+2017/10/26 15:00:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('projects/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=projects/index
+---
+2017/10/26 15:03:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('news/canadaNews...')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=news/canadaNewsView&id=107
+---
+2017/10/26 15:03:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=4&cd2=0&cd3=4&cd4=1&cd5=150-300&cd6=2&cd7=0&cd8=0&cd9=0&cd10=1&cd11=4&cd12=1&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=0&cd14=0&cd15=0&cd16=0&cd17=0&cd18=0
+---
+2017/10/26 15:03:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/view')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/view&id=12754855
+---
+2017/10/26 15:04:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('hotrecommend/mo...')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?city=3&page=183&r=hotrecommend/more
+---
+2017/10/26 15:04:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('news/canadaNews...')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=news/canadaNewsView&id=106
+---
+2017/10/26 15:04:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('news/canadaNews')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=news/canadaNews
+---
+2017/10/26 15:07:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=3&cd2=0&cd3=0&cd4=0&cd5=0&cd6=6&cd7=5&cd8=0&cd9=0&cd10=3&cd11=1&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=4&cd14=5&cd15=4&cd16=0&cd17=0&cd18=0
+---
+2017/10/26 15:08:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('house/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=house/index&type=&cd1=8&cd2=0&cd3=3&cd4=0&cd5=0&cd6=3&cd7=0&cd8=3&cd9=0&cd10=0&cd11=0&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=5&cd14=5&cd15=0&cd16=2&cd17=0&cd18=0
+---
+2017/10/26 15:09:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/framework/yiilite.php:8586
+Stack trace:
+#0 /var/www/html/framework/yiilite.php(8558): CDbConnection->open()
+#1 /var/www/html/framework/yiilite.php(8547): CDbConnection->setActive(true)
+#2 /var/www/html/framework/yiilite.php(1070): CDbConnection->init()
+#3 /var/www/html/framework/yiilite.php(1327): CModule->getComponent('db')
+#4 /var/www/html/framework/yiilite.php(7605): CApplication->getDb()
+#5 /var/www/html/framework/yiilite.php(7622): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/yiilite.php(8035): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/protected/components/XFrontBase.php(35): CActiveRecord->findAll()
+#8 /var/www/html/framework/yiilite.php(1760): XFrontBase->init()
+#9 /var/www/html/framework/yiilite.php(1681): CWebApplication->runController('map/index')
+#10 /var/www/html/framework/yiilite.php(1202): CWebApplication->processRequest()
+#11 /var/www/html/index.php(23): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=map/index&type=rent&cd1=5&cd2=0&cd3=0&cd4=4&cd5=0&cd6=4&cd7=4&cd8=6&cd9=0&cd10=2&cd11=0&cd12=0&cd12_2=0&cd12_3=0&cd12_4=0&cd12_5=0&cd13=2&cd14=2&cd15=3&cd16=0&cd17=0&cd18=1
+---
